@@ -1,5 +1,5 @@
 kind: Deployment
-apiVersion: v1
+apiVersion: extensions/v1beta1
 metadata:
   name: monopol
   namespace: robot-games-namespace
@@ -21,8 +21,10 @@ spec:
         - containerPort: 8080
           protocol: TCP
 
+---
+
 kind: Deployment
-apiVersion: v1
+apiVersion: extensions/v1beta1
 metadata:
   name: taki
   namespace: robot-games-namespace
